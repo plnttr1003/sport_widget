@@ -12,9 +12,9 @@
     });
     var config = { attributes: true, childList: true, characterData: true, subtree:true };
     observer.observe(target, config);
-})()*/
+})()
 
-
+*/
 
 
 
@@ -22,8 +22,9 @@
 
 //hall_wrapper s-hall_wrapper
 (function() {
+document.querySelectorAll('.hall_wrapper')[0].style.opacity = '0.3';
 // target elements with the "draggable" class
-interact('#hallLayout')
+interact('.hall_wrapper')
   .draggable({
     // enable inertial throwing
     inertia: true,
