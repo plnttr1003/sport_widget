@@ -1,7 +1,29 @@
+/*(function checkMutations() {
+    var target = document.querySelectorAll('.s-levels')[0];
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        console.log('-=--=-=====--===-==');
+        console.log(mutation.type);
+        if (mutation.type == 'subtree') {
+					console.log(document.querySelectorAll('.s-levels')[0]);
+        }
+        console.log('--------------------------');
+      });
+    });
+    var config = { attributes: true, childList: true, characterData: true, subtree:true };
+    observer.observe(target, config);
+})()*/
+
+
+
+
+
+
+
 //hall_wrapper s-hall_wrapper
 (function() {
 // target elements with the "draggable" class
-interact('.hall_wrapper')
+interact('#hallLayout')
   .draggable({
     // enable inertial throwing
     inertia: true,
